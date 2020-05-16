@@ -477,14 +477,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    543
+                    595
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -515,10 +515,28 @@
 <h5 id="为什么要搭这个网站"><a href="#为什么要搭这个网站" class="headerlink" title="为什么要搭这个网站"></a>为什么要搭这个网站</h5><ol>
 <li>当然最重要的是昨天我发现自己一个pycharm里的project莫名其妙的找不到了，各种search history都找不到，反正我是花了一个下午+一个晚上+一个早上才终于补完了project，实在是血的教训。所以当朋友们都推荐我git很好用的时候，我就想既然可以在github上搭个博客，那就干脆学一下，能够保证代码不丢失。</li>
 <li>其次，也是我对公众号这个平台比较失望。一则，我很想找个地方表达，但公众号往往需要被大家看到，很多隐私的内容不能发，很多自己想做的事情没法记录；二则，公众号往往还是偏花哨，写了一篇文章还要再多花一半的时间在排版上，反而浪费时间。</li>
-<li>最后，也是因为我希望有个平台能够做我的学习笔记。前段时间在自学<a href="https://www.bilibili.com/video/BV164411b7dx?from=search&seid=5387855439925447965" target="_blank" rel="noopener">Machine Learning</a>看到很多好的内容想自己记录下来，而且其实已经看到很多优秀的朋友已经在做类似的学习博客，于是嘛</li>
+<li>最后，也是因为我希望有个平台能够做我的学习笔记。前段时间在自学<a href="https://www.bilibili.com/video/BV164411b7dx?from=search&amp;seid=5387855439925447965" target="_blank" rel="noopener">Machine Learning</a>看到很多好的内容想自己记录下来，而且其实已经看到很多优秀的朋友已经在做类似的学习博客，于是嘛</li>
 </ol>
 <p><strong>最后，还是希望自己能够坚持下去啦！</strong></p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -734,6 +752,60 @@
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '2414434a9cc0fefcd919',
+        clientSecret: '45abb016b0dc3b5d6578d83cd44962be530f4667',
+        repo: 'Leaving-a-message',
+        owner: 'YAChenpku',
+        admin: "YAChenpku",
+        id: '2020-05-16T23-10-18',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
+
+    
+        <link rel="stylesheet" href="/libs/gitment/gitment-default.css">
+<link rel="stylesheet" href="/css/gitment.css">
+
+<div class="gitment-card card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitment-content" class="card-content"></div>
+</div>
+
+<script src="/libs/gitment/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+    id: 'Sat May 16 2020 23:10:18 GMT+0800',
+    owner: 'YAChenpku',
+    repo: 'Leaving-a-message',
+    oauth: {
+        client_id: '2414434a9cc0fefcd919',
+        client_secret: '45abb016b0dc3b5d6578d83cd44962be530f4667'
+    }
+});
+
+gitment.render('gitment-content');
+</script>
 
     
 
@@ -1012,7 +1084,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                    type="playlist"
                    id="2568853092"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
@@ -1038,7 +1110,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">616</span>&nbsp;字
+                class="white-color">720</span>&nbsp;字
             
             
             
